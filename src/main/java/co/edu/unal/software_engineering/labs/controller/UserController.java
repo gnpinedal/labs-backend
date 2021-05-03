@@ -35,7 +35,7 @@ public class UserController{
     public ResponseEntity<Void> registerNewUser( @PathVariable Integer roleId, @RequestBody RegisterUserPOJO userPOJO ){
         Role role = roleService.findById( roleId );
         User existingUser = userService.findByUsername( userPOJO.getUsername( ) );
-        if( role == null || existingUser != null || !userService.isRightUser( userPOJO ) ){
+        if( role == null /*|| existingUser != null*/ || !userService.isRightUser( userPOJO ) ){
             return new ResponseEntity<>( HttpStatus.BAD_REQUEST );
         }
         User newUser = new User( );

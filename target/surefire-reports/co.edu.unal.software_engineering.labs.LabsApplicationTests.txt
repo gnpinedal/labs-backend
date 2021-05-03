@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: co.edu.unal.software_engineering.labs.LabsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.31 s - in co.edu.unal.software_engineering.labs.LabsApplicationTests
